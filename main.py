@@ -10,6 +10,7 @@ import datetime
 # --- Configurazione Supabase ---
 SUPABASE_URL = os.getenv("SUPABASE_URL")
 SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+SUPABASE_TABLE_NAME = os.environ.get("SUPABASE_TABLE_NAME_V") 
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # --- Init App ---
