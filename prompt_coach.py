@@ -1,4 +1,3 @@
-# Prompt operativo da inviare a GPT
 prompt_operativo = """
 🧠 ISTRUZIONI OPERATIVE – V.E.R.S.O.™ – PREPARATORE ATLETICO
 
