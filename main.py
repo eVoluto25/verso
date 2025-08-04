@@ -1,5 +1,5 @@
 # main.py
-from prompt_coach import PROMPT_COACH
+from prompt_coach import prompt_operativo
 from fastapi import FastAPI, Request
 from pydantic import BaseModel
 from typing import Literal
