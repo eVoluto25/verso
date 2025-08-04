@@ -1,5 +1,5 @@
 # main.py
-
+from prompt_coach import PROMPT_COACH
 from fastapi import FastAPI, Request
 from pydantic import BaseModel
 from typing import Literal
@@ -34,8 +34,12 @@ async def salva_risposte(risposte: RisposteOnboarding):
         data = risposte.dict()
         data["created_at"] = datetime.datetime.utcnow().isoformat()
 
-        # Inserisce nella tabella Supabase
-        response = supabase.table("coach_onboarding").insert(data).execute()
+        # Salva su Supabase
+        response = supabase.table(SUPABASE_TABLE_NAME_V).insert(data).execute()
+        
+        # Restituisci prompt operativo al GPT
+        return JSONResponse(content={"prompt_operativo": PROMPT_COACH}, status_code=200)
+
 
         if response.get("status_code") == 201:
             return {"status": "ok"}
