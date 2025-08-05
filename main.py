@@ -62,6 +62,7 @@ class MentalInput(BaseModel):
             "infortuni": ['A', 'B'],
             "alimentazione": ['A', 'B'],
             "corporatura": ['A', 'B', 'C', 'D', 'E', 'F'],
+             "messaggio": ["A", "B"],
         }
         field_name = info.field_name
         if v not in validi[field_name]:
