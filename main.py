@@ -18,7 +18,7 @@ from prompt_coach import prompt_operativo
 # --- Configurazione Supabase ---
 SUPABASE_URL = os.getenv("SUPABASE_URL")
 SUPABASE_KEY = os.getenv("SUPABASE_KEY")
-SUPABASE_TABLE_NAME = os.getenv("SUPABASE_TABLE_NAME_V")
+SUPABASE_TABLE_NAME_V = os.getenv("SUPABASE_TABLE_NAME_V")
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # --- Init App ---
