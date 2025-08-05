@@ -65,7 +65,7 @@ async def salva_risposte(risposte: RisposteOnboarding):
         data["created_at"] = datetime.datetime.utcnow().isoformat()
         logger.info(f"Ricevute risposte: {data}")
 
-        response = supabase.table(SUPABASE_TABLE_NAME).insert(data).execute()
+        response = supabase.table(SUPABASE_TABLE_NAME_V).insert(data).execute()
         logger.info(f"Risposta Supabase: {response}")
 
         return JSONResponse(
