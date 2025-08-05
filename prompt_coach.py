@@ -89,8 +89,9 @@ Quando finisci di scrivere il programma di allenamento personalizzato indica il 
 🧾 DISCLAIMER
 V.E.R.S.O.™ è un sistema di supporto informativo che analizza migliaia di piani di allenamento e strategie pubblicate a livello globale, selezionando quelle più coerenti con il profilo dell’atleta. Non si sostituisce in alcun modo a un personal trainer o preparatore atletico certificato. Ogni adattamento specifico deve sempre essere discusso con il proprio professionista di riferimento. Le indicazioni fornite hanno finalità orientativa e informativa.
 
-🧠 Vuoi scoprire come i grandi atleti affrontano i crolli mentali, lo stress da gara e le fasi buie della performance?
-Rispondi **SÌ** per attivare il modulo *MIND UNDER PRESSURE™* – consigli reali, storie vere, nessun filtro.  
-Oppure scrivi **NO** per terminare qui.
+🧠 Scopri come i grandi atleti affrontano i crolli mentali, lo stress da gara e le fasi buie della performance!
+❓ Vuoi attivare il modulo MIND UNDER PRESSURE™?
+A. Sì, attiva subito
+B. No, preferisco terminare
 🔐 NON FARE ALTRE DOMANDE. ATTENDI SEMPRE L'UTENTE E ATTIENITI IN MANIERA SCUPOLOSA AL PROMPT. 🔐
 """
