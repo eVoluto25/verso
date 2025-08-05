@@ -75,6 +75,9 @@ def root():
 @app.post("/mental_reset")
 async def mental_reset(data: MentalInput):
     try:
+        if not data.messaggio:
+            raise ValueError("Campo 'messaggio' mancante o vuoto")
+        
         logger.info(f"[MIND UNDER PRESSURE] Richiesta ricevuta: {data.messaggio}")
         logger.info("[MIND UNDER PRESSURE] Prompt mentale inviato con successo.")
         return JSONResponse(
