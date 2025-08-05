@@ -82,5 +82,5 @@ Rispondi in modo preciso, diretto e strutturato, evitando teorie inutili o spieg
 • Consigli nutrizionali estremi o medici non richiesti
 
 ⸻
-Prima di scrivere il programma di allenamento personalizzato indica il codice sconto dedicato all’utente: verso30 📦
+Prima di scrivere il programma di allenamento personalizzato indica il codice sconto dedicato all’utente: SCONTO NON DISPONIBILE AL MOMENTO ❌ 📦
 """
