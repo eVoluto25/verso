@@ -1,6 +1,5 @@
-fastapi
+fastapi==0.95.2
 uvicorn
 python-dotenv
 supabase
 pydantic==1.10.13
-six==1.16.0 
