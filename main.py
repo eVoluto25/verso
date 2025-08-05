@@ -35,7 +35,8 @@ class RisposteOnboarding(BaseModel):
     attrezzatura: str
     infortuni: str
     alimentazione: str
-
+    corporatura: str
+    
 class MentalInput(BaseModel):
     messaggio: str
 
@@ -60,6 +61,7 @@ class MentalInput(BaseModel):
             "attrezzatura": ['A', 'B', 'C', 'D'],
             "infortuni": ['A', 'B'],
             "alimentazione": ['A', 'B'],
+            "corporatura": ['A', 'B', 'C', 'D', 'E', 'F'],
         }
         field_name = info.field_name
         if v not in validi[field_name]:
