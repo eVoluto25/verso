@@ -57,6 +57,10 @@ class RisposteOnboarding(BaseModel):
             raise ValueError(f"Valore non valido per {field.name}: {v}")
         return v
 
+@app.get("/")
+def root():
+    return {"status": "online"}
+
 # --- Endpoint per ricevere e salvare le risposte ---
 @app.post("/onboarding")
 async def salva_risposte(risposte: RisposteOnboarding):
