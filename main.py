@@ -7,7 +7,7 @@ from supabase import create_client, Client
 import os
 import datetime
 import logging
-from prompt_mental import mental_prompt
+from mental_prompt import mental_prompt
 
 # --- Logger ---
 logging.basicConfig(level=logging.INFO)
@@ -35,6 +35,9 @@ class RisposteOnboarding(BaseModel):
     attrezzatura: str
     infortuni: str
     alimentazione: str
+
+class MentalInput(BaseModel):
+    messaggio: str
 
     model_config = ConfigDict(from_attributes=True)
 
@@ -66,6 +69,22 @@ class RisposteOnboarding(BaseModel):
 @app.get("/")
 def root():
     return {"status": "online"}
+
+@app.post("/mental_reset")
+async def mental_reset(data: MentalInput):
+    try:
+        logger.info(f"[MIND UNDER PRESSURE] Richiesta ricevuta: {data.messaggio}")
+        logger.info("[MIND UNDER PRESSURE] Prompt mentale inviato con successo.")
+        return JSONResponse(
+            status_code=200,
+            content={"prompt_mentale": mental_prompt.strip()}
+        )
+    except Exception as e:
+        logger.error(f"[MIND UNDER PRESSURE] Errore: {str(e)}")
+        return JSONResponse(
+            status_code=500,
+            content={"errore": "Errore mental_reset", "dettaglio": str(e)}
+        )
 
 # --- Endpoint per ricevere e salvare le risposte ---
 @app.post("/onboarding")
