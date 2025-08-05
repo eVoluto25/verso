@@ -7,6 +7,7 @@ from supabase import create_client, Client
 import os
 import datetime
 import logging
+from prompt_mental import mental_prompt
 
 # --- Logger ---
 logging.basicConfig(level=logging.INFO)
