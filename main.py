@@ -1,7 +1,7 @@
 # main.py
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
-from pydantic import BaseModel, validator
+from pydantic import BaseModel, ConfigDict, field_validator
 from typing import Literal
 from supabase import create_client, Client
 import os
@@ -35,14 +35,18 @@ class RisposteOnboarding(BaseModel):
     infortuni: str
     alimentazione: str
 
-    @validator("*", pre=True)
+    model_config = ConfigDict(from_attributes=True)
+
+    @field_validator("*", mode="before")
+    @classmethod
     def uppercase_fields(cls, v):
         if isinstance(v, str):
             return v.upper()
         return v
 
-    @validator("*")
-    def validate_value(cls, v, field):
+    @field_validator("*")
+    @classmethod
+    def validate_value(cls, v, info):
         validi = {
             "fascia_eta": ['A', 'B', 'C', 'D', 'E'],
             "genere": ['A', 'B', 'C'],
@@ -53,8 +57,9 @@ class RisposteOnboarding(BaseModel):
             "infortuni": ['A', 'B'],
             "alimentazione": ['A', 'B'],
         }
-        if v not in validi[field.name]:
-            raise ValueError(f"Valore non valido per {field.name}: {v}")
+        field_name = info.field_name
+        if v not in validi[field_name]:
+            raise ValueError(f"Valore non valido per {field_name}: {v}")
         return v
 
 @app.get("/")
