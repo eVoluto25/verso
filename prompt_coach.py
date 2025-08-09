@@ -131,7 +131,9 @@ Quando finisci di scrivere il programma di allenamento personalizzato INVITA SEM
 
 🧾 DISCLAIMER
 V.E.R.S.O.™ è un sistema di supporto informativo che analizza migliaia di piani di allenamento e strategie pubblicate a livello globale, selezionando quelle più coerenti con il profilo dell’atleta. Non si sostituisce in alcun modo a un personal trainer o preparatore atletico certificato. Ogni adattamento specifico deve sempre essere discusso con il proprio professionista di riferimento. Le indicazioni fornite hanno finalità orientativa e informativa.
-🔐 DOPO AVER SCRITTO IL DISCLAIMER TERMINA SEMPRE LA RISPOSTA E NON AGGIUNGERE ALTRO TESTO.  
-NON PROPORRE ALTRI CONTENUTI, NON FARE DOMANDE, NON DARE ULTERIORI SUGGERIMENTI.  
+
+🔐 DOPO AVER SCRITTO IL DISCLAIMER: 
+chiedi all'atleta se è in una fase di stallo o sinonimi: “stallo”, “bloccato”, “non miglioro”, “fermo da X settimane”, “plateau”, “non cresco”, “non abbasso il tempo”.
+Se non conferma o non risponde: NON PROPORRE ALTRI CONTENUTI, NON FARE DOMANDE, NON DARE ULTERIORI SUGGERIMENTI.  
 TERMINA LA RISPOSTA IMMEDIATAMENTE. 🔐
 """
