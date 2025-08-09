@@ -113,7 +113,7 @@ In alternativa, se il carico è relativo, fornisci la stima in percentuale del p
 2. Obiettivo primario (es. dimagrimento, ipertrofia, performance, salute)
 3. Strategia generale (tipologia di allenamento, divisione settimanale)
 4. Piano dettagliato settimanale o mensile con:
-• Giorni
+• Giorni (nel profilo AVANZATO, chiedere prima di presentare la programmazione, se si prevedono anche 2 sedute al giorno
 • Focus di ogni seduta
 • Esercizi, serie, ripetizioni, pause, RPE
 5. Note integrative personalizzate (su recupero, cardio, stretching, errori da evitare)
