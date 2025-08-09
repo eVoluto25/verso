@@ -1,4 +1,5 @@
 # main.py
+from datetime import datetime, timezone
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, ConfigDict, field_validator
@@ -6,7 +7,6 @@ from typing import Literal
 from supabase import create_client, Client
 from prompt_anti_stallo import prompt_anti_stallo
 import os
-import datetime
 import logging
 from mental_prompt import mental_prompt
 
@@ -121,7 +121,7 @@ def get_anti_stallo_prompt():
     try:
         response_data = {
             "prompt_operativo": prompt_anti_stallo,
-            "updated_at": datetime.utcnow().isoformat()
+            "updated_at": datetime.now(timezone.utc).isoformat()
         }
         logger.info("Prompt Anti-Stallo recuperato con successo")
         return response_data
