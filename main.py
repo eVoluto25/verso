@@ -98,7 +98,7 @@ async def mental_reset(data: MentalInput):
 async def salva_risposte(risposte: RisposteOnboarding):
     try:
         data = risposte.dict()
-        data["created_at"] = datetime.datetime.utcnow().isoformat()
+        data["created_at"] = datetime.now(timezone.utc).isoformat()
         logger.info(f"Ricevute risposte: {data}")
 
         response = supabase.table(SUPABASE_TABLE_NAME_V).insert(data).execute()
@@ -120,7 +120,7 @@ def get_anti_stallo_prompt():
     logger.info("Richiesta ricevuta per /anti_stallo/prompt")
     try:
         response_data = {
-            "prompt_operativo": prompt_anti_stallo,
+            "prompt_operativo": prompt_anti_stallo.strip(),
             "updated_at": datetime.now(timezone.utc).isoformat()
         }
         logger.info("Prompt Anti-Stallo recuperato con successo")
