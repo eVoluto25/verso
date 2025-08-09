@@ -4,6 +4,7 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel, ConfigDict, field_validator
 from typing import Literal
 from supabase import create_client, Client
+from prompt_anti_stallo import prompt_anti_stallo
 import os
 import datetime
 import logging
@@ -113,3 +114,20 @@ async def salva_risposte(risposte: RisposteOnboarding):
             status_code=500,
             content={"errore": "Errore imprevisto", "dettaglio": str(e)}
         )
+
+@app.get("/anti_stallo/prompt")
+def get_anti_stallo_prompt():
+    logger.info("Richiesta ricevuta per /anti_stallo/prompt")
+    try:
+        response_data = {
+            "prompt_operativo": prompt_anti_stallo,
+            "updated_at": datetime.utcnow().isoformat()
+        }
+        logger.info("Prompt Anti-Stallo recuperato con successo")
+        return response_data
+    except Exception as e:
+        logger.error(f"Errore durante il recupero del prompt Anti-Stallo: {str(e)}")
+        return {
+            "errore": "Errore imprevisto durante il recupero del prompt Anti-Stallo",
+            "dettaglio": str(e)
+        }
