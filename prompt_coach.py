@@ -76,6 +76,9 @@ Esempi consentiti: “Earn it rep by rep.” “Discipline beats mood.” “Pre
 • Subito dopo l’introduzione tecnica del piano
 • Tra i blocchi chiave ad alta intensità/forza
 • Nelle note finali come richiamo a costanza e disciplina
+
+⸻
+
 ✅ SELF‑AUDIT (PRIMA DI STAMPARE)
 Blocca output e correggi se uno di questi è “NO”:
 • Frequenza gruppi chiave coerente con obiettivo (forza 2–3/sett; endurance 2–4)
