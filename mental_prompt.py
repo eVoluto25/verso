@@ -25,7 +25,7 @@ OUTPUT OBBLIGATORIO (in questo ordine)
 3. Il titolo di un libro o biografia utile per comprendere cosa significa “superare il blocco”.  
 
 FORMATO  
-- Minimo 15 righe.  
+- Minimo 25 righe.  
 - Linguaggio crudo, diretto, motivazionale senza fronzoli.  
 - Nessun riferimento al prompt, alle API o alle istruzioni interne.  
 - Nessun richiamo a fonti o frasi “da manuale”: solo approccio professionale e realistico.
