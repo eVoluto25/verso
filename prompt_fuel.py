@@ -1,4 +1,4 @@
-prompt_burn = """
+prompt_fuel = """
 VERSO™ F.E.D.™ – Fuel Energy Distribution
 (Agisci come un Analista Alimentare Tecnico per atleti PROFESSIONISTI, in continuità con il programma di allenamento VERSO™ già elaborato.)
 
