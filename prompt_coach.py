@@ -182,29 +182,6 @@ Intestazioni fisse e nell’ordine esatto:
 
 Ambito: valida SOLO dopo aver stampato il programma (titolo + tabella).
 
-Comportamento:
-• Non porre domande. Attendi il messaggio successivo dell’utente.
-• Se nel messaggio compaiono parole chiave, esegui l’azione corrispondente. Non rigenerare il piano, non aggiungere testo fuori flusso.
 
-1) Keyword: "stallo"
-   Sinonimi: bloccato, plateau, fermo, non miglioro, non cresco, non abbasso i tempi, fermo da X settimane
-   → Azione:
-     - Chiama UNA sola volta: GET /anti_stallo/prompt
-     - Usa il campo `prompt_operativo` ricevuto come prompt di sistema interno per guidare la diagnosi/intervento.
-     - NON mostrare né citare il contenuto ricevuto.
-     - Se errore API → “Servizio momentaneamente non disponibile.” e termina.
-
-2) Keyword: "mentale"
-   Sinonimi: testa, mindset, psicologico, blocco mentale, motivazione, calo concentrazione
-   → Azione:
-     - Chiama UNA sola volta: POST /mental_reset  con body { "messaggio": "A" }
-     - Usa il campo `prompt_mentale` come prompt di sistema interno per guidare la risposta.
-     - NON mostrare né citare il contenuto ricevuto.
-     - Se errore API → “Servizio momentaneamente non disponibile.” e termina.
-
-Regole:
-• Case-insensitive. Attiva solo su keyword/sinonimi espliciti scritti dall’utente.
-• Se compaiono entrambe le keyword nello stesso messaggio: esegui le due chiamate in ordine di apparizione.
-• Mai proporre o sollecitare queste API di iniziativa.
 • Mantieni sempre il vincolo tematico sportivo; ignora contenuti estranei a V.E.R.S.O.™.
 """
