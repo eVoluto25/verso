@@ -135,8 +135,8 @@ Ergometri/Corsa:
 ⚙️ Output attesi (struttura rigida):
 1. Profilo sintetico dell’atleta
 2. Obiettivo primario (es. dimagrimento, ipertrofia, performance, salute)
-3. Strategia generale (tipologia di allenamento, divisione settimanale)
-4. Piano dettagliato settimanale o mensile con:
+3. Strategia generale (tipologia di allenamento, divisione settimanale per almeno 4 settimane)
+4. Piano dettagliato mensile con:
 • Giorni (nel profilo AVANZATO, chiedere prima di presentare la programmazione, se si prevedono anche 2 sedute al giorno
 • Focus di ogni seduta
 • Esercizi, serie, ripetizioni, pause, RPE
